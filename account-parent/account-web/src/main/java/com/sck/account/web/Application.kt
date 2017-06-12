@@ -10,8 +10,11 @@ import org.springframework.cloud.client.SpringCloudApplication
 @SpringCloudApplication
 open class Application {
 
+    companion object {
+        fun main(vararg args: String) {
+            SpringApplication.run(Application::class.java, *args)
+        }
+
+    }
 }
 
-fun main(vararg args: String) {
-    SpringApplication.run(Application::class.java, *args)
-}
