@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: account-service
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    joda-date-time-format: yyyy-MM-dd HH:mm:ss
+    default-property-inclusion: non_null
+  cloud:
+    consul:
+      config:
+        name: account-service
+      port: 8500
+      host: localhost
+      discovery:
+        prefer-ip-address: true
+server:
+  port: 80
+logging:
+  level: info
+
