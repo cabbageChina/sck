@@ -9,11 +9,11 @@ import java.time.Instant
  */
 data class User(
         var id: Long? = null,
-        var username: String,
-        var password: String,
+        var username: String? = null,
+        var password: String? = null,
         var nickname: String? = null,
         var age: Int? = null,
         var gender: Gender? = null,
-        var createTime: Instant? = null,
-        var modifyTime: Instant? = null
+        var create_time: Instant? = null,
+        var modify_time: Instant? = null
 )

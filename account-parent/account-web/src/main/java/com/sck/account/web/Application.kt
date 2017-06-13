@@ -18,7 +18,6 @@ open class Application {
         fun main(vararg args: String) {
             SpringApplication.run(Application::class.java, *args)
         }
-
     }
 }
 
